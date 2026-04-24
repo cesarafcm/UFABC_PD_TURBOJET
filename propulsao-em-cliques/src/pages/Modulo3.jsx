@@ -6,29 +6,29 @@ const articles = [
   {
     id: 1,
     accessibleTitle: 'Onde o motor perde mais energia?',
-    source: 'Sen, S. (2021)',
-    journal: 'International Journal of Aeronautics and Astronautics, 2(1), 14–17',
+    source: 'ŞEN, Soner (2021)',
+    journal: 'International Journal of Aeronautics and Astronautics, v.2, n.1, p.14–17',
     color: '#f97316',
     icon: <FlaskConical size={22} color="#f97316" />,
     tags: ['Eficiência', 'Termodinâmica', 'Câmara de Combustão'],
     summary: 'Pesquisadores analisaram um motor turbojato e descobriram que a câmara de combustão é o componente onde mais energia se "perde" — como calor que não vira movimento. Isso ajuda engenheiros a saber onde focar os esforços de melhoria.',
-    whatItMeans: 'Em um motor turbojato, nem toda a energia do combustível vira empuxo. Uma parte significativa é "perdida" como calor que escapa pelos gases de exaustão ou aquece componentes do motor. A análise exergética mostra que a câmara de combustão é o "culpado" número 1 dessas perdas — respondendo por mais de 40% da destruição de exergia total. Melhorar a eficiência da combustão é, portanto, o caminho mais promissor para motores mais econômicos.',
-    keyFinding: 'A câmara de combustão é responsável pela maior parcela de perdas de energia no motor.',
+    whatItMeans: 'Em um motor turbojato, nem toda a energia do combustível vira empuxo. A análise exergética mostrou que a câmara de combustão foi responsável por 96,18% de toda a destruição de exergia do motor — com eficiência exergética de apenas 74,57%. Melhorar a eficiência da combustão é, portanto, o caminho mais promissor para motores mais econômicos.',
+    keyFinding: 'A câmara de combustão foi responsável por 96,18% de toda a destruição de exergia do motor, com eficiência exergética de 74,57%.',
     relevance: 'Alta',
     year: 2021,
-    url: 'https://dergipark.org.tr/en/pub/ijaa/issue/62592/945065',
+    url: 'https://dergipark.org.tr/en/download/article-file/1796154',
   },
   {
     id: 2,
     accessibleTitle: 'Motores em miniatura como sala de aula',
-    source: 'Catana, R.M.; Cican, G.; Badea, G.P. (2024)',
-    journal: 'Applied Sciences, MDPI, 14(15), 6754',
+    source: 'CATANA, Razvan Marius; CICAN, Grigore; BADEA, Gabriel-Petre (2024)',
+    journal: 'Applied Sciences, v.14, n.15, p.6754',
     color: '#3b82f6',
     icon: <BookOpen size={22} color="#3b82f6" />,
     tags: ['Educação', 'Mini-motores', 'Pesquisa Experimental'],
     summary: 'Cientistas mostraram que versões miniaturizadas de motores turbojato são excelentes ferramentas de ensino. Com eles, é possível estudar termodinâmica, acústica e combustíveis alternativos em laboratório, sem precisar de uma fábrica inteira.',
-    whatItMeans: 'Motores turbojato de pequeno porte (como os usados em aeromodelos avançados) se mostraram ferramentas poderosas de educação e pesquisa. Eles são seguros para usar em laboratório, têm custo acessível, e permitem medir parâmetros reais do ciclo termodinâmico — temperatura, pressão, fluxo de ar e empuxo. O estudo valida o uso desses motores como plataforma de aprendizagem ativa para engenharia aeronáutica.',
-    keyFinding: 'Mini-motores turbojato funcionais são validados como plataforma de ensino em laboratório.',
+    whatItMeans: 'Microturbinas instaladas em laboratórios portáteis são validadas como ferramentas completas de ensino, permitindo medir pressão, temperatura e empuxo sem infraestrutura complexa. O estudo valida o uso desses motores como plataforma de aprendizagem ativa para engenharia aeronáutica.',
+    keyFinding: 'Microturbinas em laboratórios portáteis permitem medir pressão, temperatura e empuxo, sendo validadas como ferramentas completas de ensino.',
     relevance: 'Alta',
     year: 2024,
     url: 'https://doi.org/10.3390/app14156754',
@@ -36,8 +36,8 @@ const articles = [
   {
     id: 3,
     accessibleTitle: 'Do desenho ao voo: construindo um motor para pesquisa',
-    source: 'Benini, E.; Giacometti, S. (2007)',
-    journal: 'Applied Energy, 84(12), 1104–1116',
+    source: 'BENINI, E.; GIACOMETTI, S. (2007)',
+    journal: 'Applied Energy, v.84, n.12, p.1102–1116',
     color: '#22c55e',
     icon: <Wrench size={22} color="#22c55e" />,
     tags: ['Projeto', 'Fabricação', 'Teste Experimental'],
@@ -46,7 +46,7 @@ const articles = [
     keyFinding: 'Turbojatos de pesquisa podem ser projetados e testados por equipes universitárias com orçamento acessível.',
     relevance: 'Histórica',
     year: 2007,
-    url: 'https://doi.org/10.1016/j.apenergy.2007.05.006',
+    url: 'https://doi.org/10.1016/j.apenergy.2007.02.002',
   },
 ]
 
@@ -327,7 +327,7 @@ export default function Modulo3() {
               </p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginTop: '1rem' }}>
                 {[
-                  { label: 'DergiPark', url: 'https://dergipark.org.tr/en/pub/ijaa/issue/62592/945065' },
+                  { label: 'DergiPark', url: 'https://dergipark.org.tr/en/download/article-file/1796154' },
                   { label: 'MDPI Applied Sciences', url: 'https://doi.org/10.3390/app14156754' },
                   { label: 'Elsevier Applied Energy', url: 'https://doi.org/10.1016/j.apenergy.2007.05.006' },
                 ].map(source => (
@@ -404,6 +404,12 @@ export default function Modulo3() {
                     title: "Beginner's Guide to Aeronautics",
                     note: 'Material didático internacional sobre propulsão aeronáutica',
                     url: 'https://www.grc.nasa.gov/www/k-12/airplane/guided.htm',
+                  },
+                  {
+                    citation: 'BUENO, W. C. (2010)',
+                    title: 'Comunicação científica e divulgação científica: aproximações e rupturas conceituais',
+                    note: 'Informação & Informação, v.15, n.esp.',
+                    url: 'https://doi.org/10.5433/1981-8920.2010v15n1espp1',
                   },
                 ].map((ref, i) => (
                   <div key={i} style={{
