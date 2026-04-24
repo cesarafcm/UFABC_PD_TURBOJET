@@ -397,7 +397,7 @@ export default function Modulo3() {
                     citation: 'HEWITT, Paul G.',
                     title: 'Física Conceitual',
                     note: 'Interpretação conceitual da física sem formalismo matemático excessivo',
-                    url: 'https://www.amazon.com.br/Física-Conceitual-Paul-G-Hewitt/dp/8577807711',
+                    url: 'https://books.google.com.br/books/about/F%C3%ADsica_Conceitual.html?id=UBWwEAAAQBAJ',
                   },
                   {
                     citation: 'NASA Glenn Research Center',
