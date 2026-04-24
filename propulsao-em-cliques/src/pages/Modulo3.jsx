@@ -391,7 +391,7 @@ export default function Modulo3() {
                     citation: 'MORAN, M. J.; SHAPIRO, H. N.',
                     title: 'Princípios de Termodinâmica para Engenharia',
                     note: 'Referência clássica para termodinâmica aplicada e ciclos de potência',
-                    url: 'https://www.amazon.com.br/Princípios-Termodinâmica-Engenharia-Michael-Moran/dp/8521637349',
+                    url: 'https://www.grupogen.com.br/principios-de-termodinamica-para-engenharia',
                   },
                   {
                     citation: 'HEWITT, Paul G.',
