@@ -8,7 +8,7 @@ import './index.css'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div style={{ minHeight: '100vh', backgroundColor: '#0f172a' }}>
         <Navbar />
         <Routes>
