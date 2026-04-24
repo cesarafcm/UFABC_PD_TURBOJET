@@ -411,6 +411,24 @@ export default function Modulo3() {
                     note: 'Informação & Informação, v.15, n.esp.',
                     url: 'https://doi.org/10.5433/1981-8920.2010v15n1espp1',
                   },
+                  {
+                    citation: 'ŞEN, Soner (2021)',
+                    title: 'Thermodynamic analysis of a small-scale gas turbine jet engine',
+                    note: 'International Journal of Aeronautics and Astronautics, v.2, n.1, p.14–17',
+                    url: 'https://dergipark.org.tr/en/download/article-file/1796154',
+                  },
+                  {
+                    citation: 'CATANA, R. M.; CICAN, G.; BADEA, G. P. (2024)',
+                    title: 'Thermodynamic Analysis and Performance Evaluation of Microjet Engines in Gas Turbine Education',
+                    note: 'Applied Sciences, v.14, n.15, p.6754. DOI: 10.3390/app14156754',
+                    url: 'https://doi.org/10.3390/app14156754',
+                  },
+                  {
+                    citation: 'BENINI, E.; GIACOMETTI, S. (2007)',
+                    title: 'Design, manufacturing and operation of a small turbojet-engine for research purposes',
+                    note: 'Applied Energy, v.84, n.12, p.1102–1116. DOI: 10.1016/j.apenergy.2007.02.002',
+                    url: 'https://doi.org/10.1016/j.apenergy.2007.02.002',
+                  },
                 ].map((ref, i) => (
                   <div key={i} style={{
                     display: 'flex',
