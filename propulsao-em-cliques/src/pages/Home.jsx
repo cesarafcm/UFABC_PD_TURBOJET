@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Cpu, Sliders, BookOpen, ChevronRight, GraduationCap, Globe } from 'lucide-react'
+import { Cpu, Sliders, BookOpen, ChevronRight, GraduationCap, Plane, Flame, Atom, Wind } from 'lucide-react'
 
 const modules = [
   {
@@ -197,6 +197,259 @@ export default function Home() {
         >
           <TurbojetDeco />
         </motion.div>
+      </section>
+
+      {/* Intro context section */}
+      <section style={{
+        padding: '5rem 1.5rem',
+        borderTop: '1px solid rgba(255,255,255,0.05)',
+      }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+
+          {/* Section header */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            style={{ textAlign: 'center', marginBottom: '4rem' }}
+          >
+            <motion.p
+              custom={0}
+              variants={fadeUp}
+              style={{ color: '#f97316', fontWeight: 600, marginBottom: '0.75rem', fontSize: '0.9rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}
+            >
+              Antes de começar
+            </motion.p>
+            <motion.h2
+              custom={1}
+              variants={fadeUp}
+              style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', fontWeight: 800, color: '#f1f5f9', lineHeight: 1.2, marginBottom: '1rem' }}
+            >
+              O que é um motor turbojato — e por que ele importa?
+            </motion.h2>
+            <motion.p
+              custom={2}
+              variants={fadeUp}
+              style={{ color: '#94a3b8', fontSize: '1.05rem', lineHeight: 1.7, maxWidth: '700px', margin: '0 auto' }}
+            >
+              Se você nunca ouviu falar de turbojato, não se preocupe. Esta página foi feita exatamente pra você.
+              Vamos começar do zero: o que é esse motor, onde você já o encontrou na vida real, e o que ele revela sobre a física do mundo.
+            </motion.p>
+          </motion.div>
+
+          {/* Where do we find it */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            style={{ marginBottom: '4rem' }}
+          >
+            <motion.h3
+              custom={0}
+              variants={fadeUp}
+              style={{ fontSize: '1.35rem', fontWeight: 700, color: '#f1f5f9', marginBottom: '1rem', textAlign: 'center' }}
+            >
+              Onde encontramos motores turbojato?
+            </motion.h3>
+            <motion.p
+              custom={1}
+              variants={fadeUp}
+              style={{ color: '#94a3b8', lineHeight: 1.7, maxWidth: '700px', margin: '0 auto 2.5rem', textAlign: 'center', fontSize: '0.98rem' }}
+            >
+              Sempre que você embarca em um avião comercial, está sentado bem ao lado de um (ou mais) motores turbojato.
+              Eles são o coração de praticamente toda a aviação moderna — de voos domésticos a jatos militares supersônicos.
+            </motion.p>
+
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+              gap: '1.25rem',
+            }}>
+              {[
+                {
+                  icon: <Plane size={28} color="#3b82f6" />,
+                  color: '#3b82f6',
+                  title: 'Aviação Comercial',
+                  desc: 'Todo avião de passageiros que você já pegou usa uma variante do motor turbojato. São os motores que permitem voar de São Paulo a Lisboa em 10 horas.',
+                },
+                {
+                  icon: <span style={{ fontSize: '1.75rem', lineHeight: 1 }}>✈️</span>,
+                  color: '#a78bfa',
+                  title: 'Aviação Militar',
+                  desc: 'Caças como o F-16 e o Gripen usam turbojatos que chegam a velocidades supersônicas. São motores menores, mas extremamente potentes.',
+                },
+                {
+                  icon: <Wind size={28} color="#22c55e" />,
+                  color: '#22c55e',
+                  title: 'Mísseis e Foguetes',
+                  desc: 'Versões compactas do turbojato aparecem em mísseis de cruzeiro. O princípio de propulsão por reação é o mesmo que levou humanos à Lua.',
+                },
+              ].map((item, i) => (
+                <motion.div
+                  key={i}
+                  custom={i}
+                  variants={fadeUp}
+                  style={{
+                    backgroundColor: '#1e293b',
+                    border: `1px solid ${item.color}25`,
+                    borderRadius: '16px',
+                    padding: '1.75rem',
+                  }}
+                >
+                  <div style={{
+                    width: '52px', height: '52px',
+                    backgroundColor: `${item.color}15`,
+                    borderRadius: '12px',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    marginBottom: '1rem',
+                  }}>
+                    {item.icon}
+                  </div>
+                  <h4 style={{ color: item.color, fontWeight: 700, marginBottom: '0.5rem', fontSize: '1rem' }}>
+                    {item.title}
+                  </h4>
+                  <p style={{ color: '#94a3b8', fontSize: '0.9rem', lineHeight: 1.65 }}>
+                    {item.desc}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* What physics does it teach */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            style={{
+              backgroundColor: '#1e293b',
+              border: '1px solid rgba(255,255,255,0.07)',
+              borderRadius: '20px',
+              padding: '2.5rem',
+              marginBottom: '4rem',
+            }}
+          >
+            <motion.h3
+              custom={0}
+              variants={fadeUp}
+              style={{ fontSize: '1.35rem', fontWeight: 700, color: '#f1f5f9', marginBottom: '0.75rem' }}
+            >
+              O que esse motor nos ensina sobre física?
+            </motion.h3>
+            <motion.p
+              custom={1}
+              variants={fadeUp}
+              style={{ color: '#94a3b8', lineHeight: 1.7, marginBottom: '2rem', fontSize: '0.98rem', maxWidth: '700px' }}
+            >
+              Um turbojato é, na prática, um laboratório de física em movimento. Ele reúne vários princípios que você estuda no ensino médio — só que funcionando juntos, em alta velocidade, a 10 km de altitude.
+            </motion.p>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+              {[
+                {
+                  icon: <span style={{ fontSize: '1.5rem' }}>↔️</span>,
+                  color: '#3b82f6',
+                  principle: '3ª Lei de Newton — Ação e Reação',
+                  explain: 'O motor joga gases para trás em alta velocidade → o avião é empurrado para frente. É o mesmo princípio de quando você solta um balão de ar: o ar sai para um lado, o balão vai para o outro.',
+                },
+                {
+                  icon: <Flame size={22} color="#f97316" />,
+                  color: '#f97316',
+                  principle: 'Termodinâmica — Calor vira trabalho',
+                  explain: 'A combustão libera energia química do querosene como calor. Esse calor faz os gases se expandirem e moverem as turbinas. É exatamente o que acontece num motor de carro — só que de forma contínua, não em explosões.',
+                },
+                {
+                  icon: <Atom size={22} color="#a78bfa" />,
+                  color: '#a78bfa',
+                  principle: 'Conservação de Energia',
+                  explain: 'Cada etapa do motor transforma energia de uma forma para outra: química → térmica → cinética → empuxo. Nada se perde, apenas muda de forma — exatamente como diz a Lei da Conservação de Energia.',
+                },
+              ].map((item, i) => (
+                <motion.div
+                  key={i}
+                  custom={i + 2}
+                  variants={fadeUp}
+                  style={{
+                    display: 'flex',
+                    gap: '1.25rem',
+                    alignItems: 'flex-start',
+                    padding: '1.25rem',
+                    backgroundColor: `${item.color}08`,
+                    border: `1px solid ${item.color}20`,
+                    borderRadius: '12px',
+                  }}
+                >
+                  <div style={{
+                    width: '44px', height: '44px',
+                    backgroundColor: `${item.color}15`,
+                    borderRadius: '10px',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    flexShrink: 0,
+                  }}>
+                    {item.icon}
+                  </div>
+                  <div>
+                    <div style={{ color: item.color, fontWeight: 700, marginBottom: '0.4rem', fontSize: '0.95rem' }}>
+                      {item.principle}
+                    </div>
+                    <p style={{ color: '#94a3b8', fontSize: '0.9rem', lineHeight: 1.65, margin: 0 }}>
+                      {item.explain}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Why high school */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            style={{
+              display: 'flex',
+              gap: '2rem',
+              alignItems: 'center',
+              flexWrap: 'wrap',
+              padding: '2.5rem',
+              backgroundColor: 'rgba(59,130,246,0.05)',
+              border: '1px solid rgba(59,130,246,0.15)',
+              borderRadius: '20px',
+              marginBottom: '1rem',
+            }}
+          >
+            <div style={{ flex: '0 0 auto' }}>
+              <div style={{
+                width: '72px', height: '72px',
+                backgroundColor: 'rgba(59,130,246,0.1)',
+                border: '1px solid rgba(59,130,246,0.3)',
+                borderRadius: '16px',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+              }}>
+                <GraduationCap size={36} color="#3b82f6" />
+              </div>
+            </div>
+            <div style={{ flex: 1, minWidth: '260px' }}>
+              <motion.h3
+                custom={0}
+                variants={fadeUp}
+                style={{ fontSize: '1.2rem', fontWeight: 700, color: '#f1f5f9', marginBottom: '0.6rem' }}
+              >
+                Por que estudar turbojatos no ensino médio?
+              </motion.h3>
+              <motion.p
+                custom={1}
+                variants={fadeUp}
+                style={{ color: '#94a3b8', lineHeight: 1.7, margin: 0, fontSize: '0.95rem' }}
+              >
+                Porque ele conecta, de forma concreta e visível, aquilo que parece abstrato na sala de aula.
+                Leis de Newton, termodinâmica, conservação de energia — tudo isso está presente num único objeto que você vê decolando no aeroporto.
+                Este site foi criado como projeto de extensão da UFABC justamente para tornar esses conceitos tangíveis, interativos e acessíveis a qualquer pessoa curiosa.
+              </motion.p>
+            </div>
+          </motion.div>
+
+        </div>
       </section>
 
       {/* Modules section */}

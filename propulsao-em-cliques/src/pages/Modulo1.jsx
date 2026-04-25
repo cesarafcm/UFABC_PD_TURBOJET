@@ -105,8 +105,13 @@ export default function Modulo1() {
           }}>
             O que é um motor turbojato?
           </h1>
-          <p style={{ color: '#94a3b8', fontSize: '1.05rem', maxWidth: '650px', lineHeight: 1.6 }}>
-            Clique em cada componente do diagrama para explorar como ele funciona e qual é a sua analogia do dia a dia.
+          <p style={{ color: '#94a3b8', fontSize: '1.05rem', maxWidth: '700px', lineHeight: 1.7, marginBottom: '0.75rem' }}>
+            Um motor turbojato é a máquina que propulsa aviões comerciais, caças militares e vários outros veículos aéreos.
+            Ele funciona sugando ar, comprimindo-o, queimando combustível e jogando os gases resultantes para trás em alta velocidade —
+            o que, pela 3ª Lei de Newton, empurra o avião para frente.
+          </p>
+          <p style={{ color: '#64748b', fontSize: '0.95rem', maxWidth: '650px', lineHeight: 1.6 }}>
+            Explore o diagrama abaixo: clique em cada componente para entender o que ele faz e ver uma analogia do dia a dia.
           </p>
         </motion.div>
 
