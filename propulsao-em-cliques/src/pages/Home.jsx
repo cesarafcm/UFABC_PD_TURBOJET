@@ -444,7 +444,6 @@ export default function Home() {
               >
                 Porque ele conecta, de forma concreta e visível, aquilo que parece abstrato na sala de aula.
                 Leis de Newton, termodinâmica, conservação de energia — tudo isso está presente num único objeto que você vê decolando no aeroporto.
-                Este site foi criado como projeto de extensão da UFABC justamente para tornar esses conceitos tangíveis, interativos e acessíveis a qualquer pessoa curiosa.
               </motion.p>
             </div>
           </motion.div>
